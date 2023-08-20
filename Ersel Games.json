@@ -390,9 +390,9 @@
 				]
 			}
 		],
-		"hasToken": true,
-		"hasFluff": true,
-		"hasFluffImages": true
+		"hasToken": false,
+		"hasFluff": false,
+		"hasFluffImages": false
 	}
 	]
 }
