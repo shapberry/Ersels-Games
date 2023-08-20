@@ -205,7 +205,8 @@
 			]
 		}
 	],
-	"vehicle": [{
+	"vehicle": [
+	{
 		"name": "Party's Demon Grinder",
 		"source": "ErselsGames",
 		"page": 219,
@@ -298,6 +299,100 @@
 		"hasToken": false,
 		"hasFluff": false,
 		"hasFluffImages": false
-	}]
-
+	},
+	
+	{
+		"name": "Bitter Breath's Tormentor",
+		"source": "EG",
+		"page": 218,
+		"vehicleType": "INFWAR",
+		"size": "H",
+		"weight": 3000,
+		"terrain": [
+			"land"
+		],
+		"capCreature": 4,
+		"capCargo": 500,
+		"speed": 100,
+		"str": 16,
+		"dex": 14,
+		"con": 14,
+		"int": 0,
+		"wis": 0,
+		"cha": 0,
+		"hp": {
+			"hp": 60,
+			"dt": 10,
+			"mt": 20
+		},
+		"immune": [
+			"fire",
+			"poison",
+			"psychic"
+		],
+		"conditionImmune": [
+			"blinded",
+			"charmed",
+			"deafened",
+			"frightened",
+			"paralyzed",
+			"petrified",
+			"poisoned",
+			"stunned",
+			"unconscious"
+		],
+		"trait": [
+			{
+				"name": "Crushing Wheels",
+				"entries": [
+					"The Tormentor can move through the space of any Medium or smaller creature. When it does, the creature must succeed on a DC 13 Dexterity saving throw or take 11 ({@damage 2d10}) bludgeoning damage and be knocked {@condition prone}.If the creature was already {@condition prone}, it takes an extra 11 ({@damage 2d10}) bludgeoning damage.This trait can't be used against a particular creature more than once each turn."
+				]
+			},
+			{
+				"name": "Prone Deficiency",
+				"entries": [
+					"If the Tormentor rolls over and falls {@condition prone}, it can't right itself and is {@condition incapacitated} until flipped upright."
+				]
+			},
+			{
+				"name": "Magic Weapons",
+				"entries": [
+					"The Tormentor's weapon attacks are magical."
+				]
+			},
+			{
+				"name": "Raking Scythes",
+				"entries": [
+					"When the Tormentor moves within 5 feet of a creature that isn't {@condition prone} or another vehicle for the first time on a turn, it can rake the creature or vehicle with its protruding blades for 13 ({@damage 2d10 + 2}) slashing damage. A creature moves out of the way and takes no damage if it succeeds on a DC 13 Dexterity saving throw.A vehicle moves out of the way and takes no damage if its driver succeeds on the saving throw."
+				]
+			}
+		],
+		"actionStation": [
+			{
+				"name": "Helm (Requires 1 Crew and Grants Three-Quarters Cover)",
+				"entries": [
+					"Drive and steer the Tormentor"
+				]
+			},
+			{
+				"name": "Infernal Screamer (Requires 1 Crew and Grants Half Cover)",
+				"entries": [
+					"The screamer's operator targets one creature it can see within 120 feet of the screamer. The target must make a DC 15 Wisdom saving throw, taking 26 ({@damage 4d12}) psychic damage on a failed save, or half as much damage on a successful one."
+				]
+			}
+		],
+		"reaction": [
+			{
+				"type": "entries",
+				"name": "Juke",
+				"entries": [
+					"If the Tormentor is able to move, the driver can use its reaction to grant the Tormentor advantage on a Dexterity saving throw."
+				]
+			}
+		],
+		"hasToken": true,
+		"hasFluff": true,
+		"hasFluffImages": true
+	}
+	]
 }
