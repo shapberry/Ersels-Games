@@ -1,0 +1,303 @@
+{
+	"_meta": {
+		"sources": [{
+			"json": "ErselsGames",
+			"abbreviation": "EG",
+			"full": "Ersel's Games",
+			"url": "",
+			"authors": [
+				"Ersel"
+			],
+			"convertedBy": ["Ersel"]
+		}]
+	},
+	"monster": [{
+			"name": "Capybara",
+			"size": [
+				"S"
+			],
+			"type": "beast",
+			"source": "ErselsGames",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "2d6 + 2",
+				"average": 9
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 20
+			},
+			"str": 8,
+			"dex": 15,
+			"con": 12,
+			"int": 2,
+			"wis": 10,
+			"cha": 8,
+			"passive": 10,
+			"cr": "1/4",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"trait": [{
+					"name": "Keen Smell",
+					"entries": [
+						"The capybara has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The capybara has advantage on an attack roll against a creature if at least one of the capybara's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				}
+			],
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"action": [{
+				"name": "Bite",
+				"entries": [
+					"{@atk mw} {@hit +4} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 2}) piercing damage."
+				]
+			}],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"familiar": true,
+			"fluff": {
+				"images": [{
+					"type": "image",
+					"href": {
+						"type": "external",
+						"url": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/the-capybara-greg-joens.jpg"
+					}
+				}]
+			},
+			"uniqueId": "fb607d73-cb51-4055-a31e-7dbb58390a08"
+		},
+		{
+			"name": "Reya Mantlemorn",
+			"source": "ErselsGames",
+			"page": 63,
+			"level": 10,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"sidekickType": "warrior",
+				"sidekickHidden": true
+			},
+			"ac": [{
+				"ac": 18,
+				"from": [
+					"{@item splint armor|phb}",
+					"improved defence"
+				]
+			}],
+			"hp": {
+				"formula": "10d8 + 20",
+				"average": 65
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 14,
+			"int": 14,
+			"wis": 10,
+			"cha": 10,
+			"skill": {
+				"athletics": "+7",
+				"perception": "+4",
+				"religion": "+6"
+			},
+			"passive": 14,
+			"languages": [
+				"Common"
+			],
+			"action": [{
+					"name": "+1 Longsword",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d8 + 5}) damage, or 10 ({@damage 1d10 + 5}) damage if used with both hands."
+					]
+				},
+				{
+					"name": "Heavy Crossbow",
+					"entries": [
+						"{@atk rw} {@hit +8} to hit, range 100/400 ft., one target. {@h}8 ({@damage 1d10 + 3}) piercing damage."
+					]
+				}
+			],
+			"languageTags": [
+				"C"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"RNG"
+			],
+			"tokenUrl": "https://i.redd.it/sfdm6w51uwh51.png",
+			"shortName": "Reya",
+			"alignment": null,
+			"save": {
+				"str": "+7"
+			},
+			"trait": [{
+					"name": "Martial Role: Attacker",
+					"entries": [
+						"The warrior gains a +2 bonus to attack rolls."
+					]
+				},
+				{
+					"name": "Improved Critical",
+					"entries": [
+						"The sidekick's attack rolls score a critical hit on a roll of 19 or 20 on the {@dice d20}."
+					]
+				},
+				{
+					"name": "Extra Attack",
+					"entries": [
+						"The sidekick can attack twice, instead of once, whenever it takes the Attack action on its turn."
+					]
+				},
+				{
+					"name": "Battle Readiness",
+					"entries": [
+						"The sidekick has advantage on initiative rolls."
+					]
+				},
+				{
+					"name": "Improved Defence.",
+					"entries": [
+						"The sidekick's Armor Class increases by 1."
+					]
+				}
+			],
+			"isNpc": true,
+			"bonus": [{
+				"name": "Second Wind",
+				"entries": [
+					"The sidekick can use a bonus action on its turn to regain hit points equal to {@dice 1d10} + its level in this class. Once it uses this feature, it must finish a short or long rest before it can use it again."
+				]
+			}],
+			"uniqueId": "a9d6b8ef-6109-444b-8814-4c8357eae064",
+			"attachedItems": [
+				"+1 longsword|dmg",
+				"heavy crossbow|phb"
+			],
+			"pbNote": "+4",
+			"damageTags": [
+				"P"
+			]
+		}
+	],
+	"vehicle": [{
+		"name": "Party's Demon Grinder",
+		"source": "ErselsGames",
+		"page": 219,
+		"vehicleType": "INFWAR",
+		"size": "G",
+		"weight": 12000,
+		"terrain": [
+			"land"
+		],
+		"capCreature": 8,
+		"capCargo": 2000,
+		"speed": 125,
+		"str": 18,
+		"dex": 12,
+		"con": 18,
+		"int": 0,
+		"wis": 0,
+		"cha": 0,
+		"hp": {
+			"hp": 200,
+			"dt": 10,
+			"mt": 20
+		},
+		"immune": [
+			"fire",
+			"poison",
+			"psychic"
+		],
+		"conditionImmune": [
+			"blinded",
+			"charmed",
+			"deafened",
+			"frightened",
+			"paralyzed",
+			"petrified",
+			"poisoned",
+			"stunned",
+			"unconscious"
+		],
+		"trait": [{
+				"name": "Crushing Wheels",
+				"entries": [
+					"The Demon Grinder can move through the space of any Large or smaller creature. When it does, the creature must succeed on a DC 11 Dexterity saving throw or take 22 ({@damage 4d10}) bludgeoning damage and be knocked {@condition prone}. If the creature was already {@condition prone}, it takes an extra 22 ({@damage 4d10}) bludgeoning damage. This trait can't be used against a particular creature more than once each turn."
+				]
+			},
+			{
+				"name": "Magic Weapons",
+				"entries": [
+					"The Demon Grinder's weapon attacks are magical."
+				]
+			},
+			{
+				"name": "Prone Deficiency",
+				"entries": [
+					"If the Demon Grinder rolls over and falls {@condition prone}, it can't right itself and is {@condition incapacitated} until flipped upright."
+				]
+			},
+			{
+				"name": "Infernal Adamantium Alloy Pistons",
+				"entries": [
+					"Dexterity of the Demon Grinder is increased by two and speed is increased by 25."
+				]
+			}
+		],
+		"actionStation": [{
+				"name": "Helm (Requires 1 Crew and Grants Three-Quarters Cover)",
+				"entries": [
+					"Drive and steer the Demon Grinder."
+				]
+			},
+			{
+				"name": "Better Chomper (Requires 1 Crew and Grants Half Cover)",
+				"entries": [
+					"{@atk mw} {@hit 12} to hit, reach 5 ft., one target. {@h}25 ({@damage 8d8 + 8}) piercing damage. A target reduced to 0 hit points by this damage is ground to bits and spit out through pipes on both sides of the Demon Grinder. Any nonmagical items the target was holding or carrying are destroyed as well."
+				]
+			},
+			{
+				"name": "Wrecking Ball (Requires 1 Crew and Grants Half Cover)",
+				"entries": [
+					"{@atk mw} {@hit 9} to hit, reach 15 ft., one target. {@h}40 ({@damage 8d8 + 4}) bludgeoning damage. Double the damage if the target is an object or a structure."
+				]
+			},
+			{
+				"name": "2 Harpoon Flingers (Each Station Requires 1 Crew and Grants Half Cover)",
+				"entries": [
+					"{@atk rw} {@hit 5} to hit, range 120 ft., one target. {@h}9 ({@damage 2d8}) piercing damage."
+				]
+			}
+		],
+		"hasToken": false,
+		"hasFluff": false,
+		"hasFluffImages": false
+	}]
+
+}
