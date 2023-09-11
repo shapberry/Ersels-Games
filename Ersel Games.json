@@ -186,6 +186,13 @@
 						"The sidekick's Armor Class increases by 1."
 					]
 				}
+				{
+					"name": "Indomitable",
+					"entries": [
+						"The sidekick can reroll a saving throw that it fails, but it must use the new roll. When it uses this feature, it can't use the feature again until it finishes a long rest.",
+						"The sidekick can use this feature twice between long rests starting at 18th level."
+					]
+				}
 			],
 			"isNpc": true,
 			"bonus": [{
@@ -193,7 +200,15 @@
 				"entries": [
 					"The sidekick can use a bonus action on its turn to regain hit points equal to {@dice 1d10} + its level in this class. Once it uses this feature, it must finish a short or long rest before it can use it again."
 				]
-			}],
+			},
+			{
+				"name": "The Righteous Sadism",
+				"entries": [
+					"This character, under the influense of Hells, becomes more resentful, which fuels them in battle. When it hits an evil creature with a weapon attack, it can use this action to add {@dice 1d10} damage. At the end of the battle it must succeed on a {@dc 5} + the amount of times it used this ability or change it's allignment to neutral if it's current allignment is good and evil if it was neutral. ",
+					"Affected creature can repeat this saving throw with the same difficulty in the middle of a long rest. Character that have a spiritual connection with a good god roll this check with advantage."
+				]
+			}
+			],
 			"uniqueId": "a9d6b8ef-6109-444b-8814-4c8357eae064",
 			"attachedItems": [
 				"+1 longsword|dmg",
