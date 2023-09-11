@@ -88,122 +88,146 @@
 			"uniqueId": "fb607d73-cb51-4055-a31e-7dbb58390a08"
 		},
 		{
-			"name": "Reya Mantlemorn",
-			"source": "ErselsGames",
-			"page": 63,
-			"level": 10,
-			"size": [
-				"M"
-			],
-			"type": {
-				"type": "humanoid",
-				"sidekickType": "warrior",
-				"sidekickHidden": true
-			},
-			"ac": [{
+		"name": "Reya Mantlemorn",
+		"source": "ErselsGames",
+		"page": 63,
+		"level": 10,
+		"size": [
+			"M"
+		],
+		"type": {
+			"type": "humanoid",
+			"sidekickType": "warrior",
+			"sidekickHidden": true
+		},
+		"ac": [
+			{
 				"ac": 18,
 				"from": [
 					"{@item splint armor|phb}",
 					"improved defence"
 				]
-			}],
-			"hp": {
-				"formula": "10d8 + 20",
-				"average": 65
+			}
+		],
+		"hp": {
+			"formula": "10d8 + 20",
+			"average": 65
+		},
+		"speed": {
+			"walk": 30
+		},
+		"str": 16,
+		"dex": 14,
+		"con": 14,
+		"int": 14,
+		"wis": 10,
+		"cha": 10,
+		"skill": {
+			"athletics": "+7",
+			"perception": "+4",
+			"religion": "+6"
+		},
+		"passive": 14,
+		"languages": [
+			"Common"
+		],
+		"action": [
+			{
+				"name": "+1 Longsword",
+				"entries": [
+					"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d8 + 5}) damage, or 10 ({@damage 1d10 + 5}) damage if used with both hands."
+				]
 			},
-			"speed": {
-				"walk": 30
+			{
+				"name": "Heavy Crossbow",
+				"entries": [
+					"{@atk rw} {@hit +8} to hit, range 100/400 ft., one target. {@h}8 ({@damage 1d10 + 3}) piercing damage."
+				]
+			}
+		],
+		"languageTags": [
+			"C"
+		],
+		"miscTags": [
+			"MW",
+			"MLW",
+			"RW"
+		],
+		"tokenUrl": "https://i.redd.it/sfdm6w51uwh51.png",
+		"shortName": "Reya",
+		"alignment": null,
+		"save": {
+			"str": "+7"
+		},
+		"trait": [
+			{
+				"name": "Martial Role: Attacker",
+				"entries": [
+					"The warrior gains a +2 bonus to attack rolls."
+				]
 			},
-			"str": 16,
-			"dex": 14,
-			"con": 14,
-			"int": 14,
-			"wis": 10,
-			"cha": 10,
-			"skill": {
-				"athletics": "+7",
-				"perception": "+4",
-				"religion": "+6"
+			{
+				"name": "Improved Critical",
+				"entries": [
+					"The sidekick's attack rolls score a critical hit on a roll of 19 or 20 on the {@dice d20}."
+				]
 			},
-			"passive": 14,
-			"languages": [
-				"Common"
-			],
-			"action": [{
-					"name": "+1 Longsword",
-					"entries": [
-						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d8 + 5}) damage, or 10 ({@damage 1d10 + 5}) damage if used with both hands."
-					]
-				},
-				{
-					"name": "Heavy Crossbow",
-					"entries": [
-						"{@atk rw} {@hit +8} to hit, range 100/400 ft., one target. {@h}8 ({@damage 1d10 + 3}) piercing damage."
-					]
-				}
-			],
-			"languageTags": [
-				"C"
-			],
-			"miscTags": [
-				"MW",
-				"RW",
-				"RNG"
-			],
-			"tokenUrl": "https://i.redd.it/sfdm6w51uwh51.png",
-			"shortName": "Reya",
-			"alignment": null,
-			"save": {
-				"str": "+7"
+			{
+				"name": "Extra Attack",
+				"entries": [
+					"The sidekick can attack twice, instead of once, whenever it takes the Attack action on its turn."
+				]
 			},
-			"trait": [{
-					"name": "Martial Role: Attacker",
-					"entries": [
-						"The warrior gains a +2 bonus to attack rolls."
-					]
-				},
-				{
-					"name": "Improved Critical",
-					"entries": [
-						"The sidekick's attack rolls score a critical hit on a roll of 19 or 20 on the {@dice d20}."
-					]
-				},
-				{
-					"name": "Extra Attack",
-					"entries": [
-						"The sidekick can attack twice, instead of once, whenever it takes the Attack action on its turn."
-					]
-				},
-				{
-					"name": "Battle Readiness",
-					"entries": [
-						"The sidekick has advantage on initiative rolls."
-					]
-				},
-				{
-					"name": "Improved Defence.",
-					"entries": [
-						"The sidekick's Armor Class increases by 1."
-					]
-				}
-			],
-			"isNpc": true,
-			"bonus": [{
+			{
+				"name": "Battle Readiness",
+				"entries": [
+					"The sidekick has advantage on initiative rolls."
+				]
+			},
+			{
+				"name": "Improved Defence.",
+				"entries": [
+					"The sidekick's Armor Class increases by 1."
+				]
+			},
+			{
+				"name": "Indomitable",
+				"entries": [
+					"The sidekick can reroll a saving throw that it fails, but it must use the new roll. When it uses this feature, it can't use the feature again until it finishes a long rest.",
+					"The sidekick can use this feature twice between long rests starting at 18th level."
+				]
+			}
+		],
+		"isNpc": true,
+		"bonus": [
+			{
 				"name": "Second Wind",
 				"entries": [
 					"The sidekick can use a bonus action on its turn to regain hit points equal to {@dice 1d10} + its level in this class. Once it uses this feature, it must finish a short or long rest before it can use it again."
 				]
-			}],
-			"uniqueId": "a9d6b8ef-6109-444b-8814-4c8357eae064",
-			"attachedItems": [
-				"+1 longsword|dmg",
-				"heavy crossbow|phb"
-			],
-			"pbNote": "+4",
-			"damageTags": [
-				"P"
+			},
+			{
+				"name": "The Righteous Sadism",
+				"entries": [
+					"This character, under the influense of Hells, becomes more resentful, which fuels them in battle. When it hits an evil creature with a weapon attack, it can use this action to add {@dice 1d10} damage. At the end of the battle it must succeed on a {@dc 5} + the amount of times it used this ability or change it's allignment to neutral if it's current allignment is good and evil if it was neutral. ",
+					"Affected creature can repeat this saving throw with the same difficulty in the middle of a long rest. Character that have a spiritual connection with a good god roll this check with advantage."
+				]
+			}
+		],
+		"attachedItems": [
+			"+1 longsword|dmg",
+			"heavy crossbow|phb"
+		],
+		"pbNote": "+4",
+		"fluff": {
+			"entries": [
+				"Becomes more and more sadistic due to the influense of Hell"
 			]
-		}
+		},
+		"damageTags": [
+			"P"
+		]
+	}
 	],
 	"vehicle": [
 	{
